@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int sumVector(const vector<int> &nums)
+{
+    int result = 0;
+    for (int sum : nums)
+    {
+        result += sum;
+    };
+   return result;
+}
+
+int main()
+{
+    vector<int> numbers = {10, 20, 30, 40, 50};
+    vector<int> num2 = {60, 70, 80, 90, 100};
+    cout << "the sum of nums is : "<< sumVector(numbers);
+    cout << "\n========================\n";
+    cout << "the sum of nums is : "<< sumVector(num2);
+
+
+    return 0;
+}
